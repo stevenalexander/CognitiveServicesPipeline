@@ -36,4 +36,11 @@ To deploy the web app (from repo [CognitiveServicesPipelineWebApp](https://githu
 
 ```
 az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineWebApp.git --branch master --manual-integration
+# sync for updates
+az webapp deployment source sync --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline
 ```
+
+## Notes
+
+* Deleting the resource group can take >2 mins due to deleting the Cosmo account
+* Powershell can also be used for deployment, but publishing applications is fiddly and poorly documented for node
