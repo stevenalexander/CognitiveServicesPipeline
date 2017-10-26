@@ -35,5 +35,5 @@ az group delete --name CognitiveServicesPipeline
 To deploy the web app (from repo [CognitiveServicesPipelineWebApp](https://github.com/stevenalexander/CognitiveServicesPipelineWebApp)):
 
 ```
-az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --slot staging --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineWebApp.git --branch master --manual-integration
+az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineWebApp.git --branch master --manual-integration
 ```
