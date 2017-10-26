@@ -32,14 +32,8 @@ az group delete --name CognitiveServicesPipeline
 
 ### Deploying the applications
 
-Create deployment slot (only needed once):
+To deploy the web app (from repo [CognitiveServicesPipelineWebApp](https://github.com/stevenalexander/CognitiveServicesPipelineWebApp)):
 
 ```
-az webapp deployment slot create --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --slot staging
-```
-
-To deploy the web app:
-
-```
-az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --slot staging --repo-url https://github.com/stevenalexander/CognitiveServicesPipeline.git --branch master --app-working-dir VisualisationWebApp --manual-integration
+az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --slot staging --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineWebApp.git --branch master --manual-integration
 ```

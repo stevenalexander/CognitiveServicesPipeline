@@ -16,7 +16,7 @@
 		},
 		"svcPlanSize": {
 			"type": "string",
-			"defaultValue": "S1",
+			"defaultValue": "F1",
 			"metadata": {
 				"description": "The instance size of the App Service Plan."
 			}
@@ -30,7 +30,7 @@
         "Standard",
         "Premium"
       ],
-      "defaultValue": "Standard",
+      "defaultValue": "Free",
       "metadata": {
         "description": "The pricing tier of the App Service plan."
       }
