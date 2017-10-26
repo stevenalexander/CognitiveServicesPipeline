@@ -1,0 +1,14 @@
+{
+  "name": "visualisation-web-app",
+  "version": "0.0.0",
+  "description": "VisualisationWebApp",
+  "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  },
+  "author": {
+    "name": "Steven Alexander"
+  }
+}
