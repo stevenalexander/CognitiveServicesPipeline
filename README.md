@@ -40,6 +40,12 @@ az webapp deployment source config --name cognitiveservicespipeline --resource-g
 az webapp deployment source sync --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline
 ```
 
+To deploy the function app (from repo [CognitiveServicesPipelineFunction](https://github.com/stevenalexander/CognitiveServicesPipelineFunction)):
+
+```
+az functionapp deployment source config --name cognitiveservicespipelinefunction --resource-group CognitiveServicesPipeline --branch master --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineFunction --manual-integration 
+```
+
 ## Notes
 
 * Deleting the resource group can take >2 mins due to deleting the Cosmo account
